@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.4 <0.7.0;
+pragma solidity 0.8.18;
 
-import './ERC20.sol';
+import {IERC20} from './IERC20.sol';
 
  /*
  * @title simple contract.
  * @author catellaTech
  */
-contract firstContract{
+contract basic_concepts{
      
-    address owner;
+    address public immutable OWNER;
     ERC20basic token;
 
     constructor() public {
-        owner = msg.sender;
+        OWNER = msg.sender;
         token = new ERC20Basic(1000)
     }
 }
