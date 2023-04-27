@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.4 <0.7.0;
+pragma solidity 0.8.18;
 
-// @title Functions/ returns
+// @title Functions / returns
 // @author catellaTech
 
 contract returnsValues {
@@ -25,9 +25,8 @@ contract returnsValues {
 
     function pair_odd(uint _a) public pure returns(bool) {
         bool flag;
-        
         if(_a % 2 == 0) flag = true;
-        else flag=false;
+        else flag = false;
         return flag;
     }
 
@@ -69,6 +68,4 @@ contract returnsValues {
     function lastValue() public pure  {
         (,,,,,uint last) = Numbers();
     }
-
-
 }
